@@ -14,5 +14,37 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/about', function () {
+    return view('layouts/pages/about');
+});
+
+Route::get('/property-grid', function () {
+    return view('layouts/pages/property-grid');
+});
+
+Route::get('/blog-grid', function () {
+    return view('layouts/pages/blog-grid');
+});
+
+Route::get('/property-single', function () {
+    return view('layouts/pages/property-single');
+});
+
+Route::get('/blog-single', function () {
+    return view('layouts/pages/blog-single');
+});
+
+Route::get('/agent-grid', function () {
+    return view('layouts/pages/agent-grid');
+});
+
+Route::get('/agent-single', function () {
+    return view('layouts/pages/agent-single');
+});
+
+Route::get('/contact', function () {
+    return view('layouts/pages/contact');
 });
